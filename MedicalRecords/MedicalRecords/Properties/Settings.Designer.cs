@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace NewProject.Properties
+namespace MedicalRecords.Properties
 {
 
 
