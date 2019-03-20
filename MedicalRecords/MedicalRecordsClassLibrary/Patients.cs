@@ -20,7 +20,7 @@ namespace MedicalRecordsClassLibrary
         public bool PatientDischarged { get; set; }
 
 
-        static public Patients NewPatient(string FName, string LName, DateTimeKind DOB, string Age, string Gender, DateTime Date, string ChiefComplaint, string HbA1c)
+        static public Patients NewPatient(string FName, string LName, DateTime DOB, string Age, string Gender, DateTime Date, string ChiefComplaint, string HbA1c)
         {
             return new Patients() { PatientFirstName = FName, PatientLastName = LName, PatientDOB = DOB, PatientAge = Age, PatientGender = Gender, DateAdmitted = Date, PatientID = new Random().Next(0, 2500).ToString(), PatientChiefComplaint = ChiefComplaint, HbA1cResult = HbA1c };
         }

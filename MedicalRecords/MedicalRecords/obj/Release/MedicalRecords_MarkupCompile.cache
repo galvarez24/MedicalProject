@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\alvar\Documents\MedicalProject\MedicalRecords\MedicalRecords\obj\Debug\
+C:\Users\alvar\Documents\MedicalProject\MedicalRecords\MedicalRecords\obj\Release\
 MedicalRecords
 none
 false
-DEBUG;TRACE
+TRACE
 C:\Users\alvar\Documents\MedicalProject\MedicalRecords\MedicalRecords\App.xaml
 31291642447
 
-11-2071732488
-14-775745830
+7779613990
+14-250525163
 MainWindow.xaml;PatientInfo.xaml;PatientList.xaml;
 
-False
+True
 

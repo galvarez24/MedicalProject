@@ -5,8 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MedicalRecords"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+        Title="Login" Height="420" Width="700" WindowStartupLocation="CenterScreen"  WindowStyle="SingleBorderWindow" MouseLeftButtonDown="Main_MouseLeftButtonDown" ResizeMode="NoResize" >
+    <Border BorderBrush="AliceBlue" BorderThickness="5">
+        <Grid>
+            <Image Source="Design/LoginBackground1.jpg" Stretch="UniformToFill"/>
+            <TextBlock Text="InfoMED" HorizontalAlignment="Center" Margin="0,55,20,0" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold" FontSize="30" Foreground="Black"/>
+            <TextBlock x:Name="UserName" HorizontalAlignment="Center" Margin="0,53,140,0" TextWrapping="Wrap" Text="Username" VerticalAlignment="Center" Foreground="Black" FontSize="19" FontWeight="Bold"/>
+            <TextBlock x:Name="UserPassword" HorizontalAlignment="Center" Margin="0,105,140,0" TextWrapping="Wrap" Text="Password" VerticalAlignment="Center" Foreground="Black" FontSize="19" FontWeight="Bold"/>
+            <TextBox x:Name="UserNameBox" HorizontalAlignment="Center" Margin="256,168,150,114" VerticalAlignment="Center" Width="126"  Height="22" Background="AliceBlue"/>
+            <TextBox x:Name="PasswordBox" HorizontalAlignment="Center" Margin="256,220,150,114" VerticalAlignment="Center" Width="126"  Height="22" Background="AliceBlue"/>
+
+
+        </Grid>
+    </Border>
 </Window>

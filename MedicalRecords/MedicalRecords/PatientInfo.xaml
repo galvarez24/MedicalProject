@@ -1,0 +1,34 @@
+﻿<Window x:Class="MedicalRecords.PatientInfo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MedicalRecords"
+        mc:Ignorable="d"
+        Title="PatientInfo" Height="750" Width="900">
+    <Grid Background="AliceBlue">
+        <Image Source="Design/patientinfobackground.png" Stretch="UniformToFill"/>
+        <TextBlock Text="Patient Information" HorizontalAlignment="Center" Margin="0,30,450,0" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold" FontSize="30" Foreground="Black"/>
+        <Image Margin="50,130,700,450" x:Name="PatientPic"/>
+        <TextBlock x:Name="PatientName" HorizontalAlignment="Center" Margin="0,140,400,0" TextWrapping="Wrap" Text="Name" VerticalAlignment="Top" Foreground="Black" FontSize="13" FontWeight="Bold"/>
+        <TextBlock x:Name="PatientDOB" HorizontalAlignment="Center" Margin="0,180,400,0" TextWrapping="Wrap" Text="DOB" VerticalAlignment="Top" Foreground="Black" FontSize="13" FontWeight="Bold"/>
+        <TextBlock x:Name="PatientAge" HorizontalAlignment="Center" Margin="0,220,400,0" TextWrapping="Wrap" Text="Age" VerticalAlignment="Top" Foreground="Black" FontSize="13" FontWeight="Bold"/>
+        <TextBlock x:Name="PatientGender" HorizontalAlignment="Center" Margin="0,140,60,0" TextWrapping="Wrap" Text="Gender" VerticalAlignment="Top" Foreground="Black" FontSize="13" FontWeight="Bold"/>
+        <TextBlock x:Name="PatientAdmit" HorizontalAlignment="Center" Margin="0,180,85,0" TextWrapping="Wrap" Text="Admit Date" VerticalAlignment="Top" Foreground="Black" FontSize="13" FontWeight="Bold"/>
+        <TextBlock x:Name="PatientComplaint" HorizontalAlignment="Center" Margin="0,220,110,0" TextWrapping="Wrap" Text="Chief Complaint" VerticalAlignment="Top" Foreground="Black" FontSize="13" FontWeight="Bold"/>
+
+        <ListBox   x:Name="PatientAllergies" Margin="20,330,650,230" />
+        <ListBox   x:Name="PatientSurgeries" Margin="20,540,650,20"/>
+        <ListBox   x:Name="PatientMedications" Margin="330,330,340,230" />
+        <ListBox   x:Name="PatientLabs" Margin="330,540,340,20" />
+        <ListBox   x:Name="PatientDiagnosis" Margin="650,330,20,230" />
+        <ListBox   x:Name="PatientRemakrs" Margin="650,540,20,20" />
+
+
+
+
+
+
+
+    </Grid>
+</Window>

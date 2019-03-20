@@ -10,24 +10,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace MedicalRecords
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for PatientInfo.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class PatientInfo : Window
     {
-        public MainWindow()
+        public PatientInfo()
         {
             InitializeComponent();
         }
-        private void Main_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
-        {
-            this.DragMove();
-        }
-
     }
 }
