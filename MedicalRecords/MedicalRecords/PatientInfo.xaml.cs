@@ -236,9 +236,39 @@ namespace MedicalRecords
 
             {
                 //this way automatically closes the files and releases it once its done with it           
-                using (StreamWriter outfile = new StreamWriter(*Path.Text))
+                using (StreamWriter outfile = new StreamWriter(AllergiesPath.Text))
                 {
-                    outfile.Write(fileContents.Text);
+                    outfile.Write(PatientAllergies.Text);
+                }
+
+                //this way automatically closes the files and releases it once its done with it           
+                using (StreamWriter outfile = new StreamWriter(SurgeriesPath.Text))
+                {
+                    outfile.Write(PatientSurgeries.Text);
+                }
+
+                //this way automatically closes the files and releases it once its done with it           
+                using (StreamWriter outfile = new StreamWriter(MedicationsPath.Text))
+                {
+                    outfile.Write(PatientMedications.Text);
+                }
+
+                //this way automatically closes the files and releases it once its done with it           
+                using (StreamWriter outfile = new StreamWriter(LabsPath.Text))
+                {
+                    outfile.Write(PatientLabs.Text);
+                }
+
+                //this way automatically closes the files and releases it once its done with it           
+                using (StreamWriter outfile = new StreamWriter(DiagnosisPath.Text))
+                {
+                    outfile.Write(PatientDiagnosis.Text);
+                }
+
+                //this way automatically closes the files and releases it once its done with it           
+                using (StreamWriter outfile = new StreamWriter(RemarksPath.Text))
+                {
+                    outfile.Write(PatientRemakrs.Text);
                 }
             }
     }
