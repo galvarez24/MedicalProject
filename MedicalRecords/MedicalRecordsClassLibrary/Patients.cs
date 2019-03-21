@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MedicalRecordsClassLibrary
 {
-    class Patients
+    public class Patients
     {
         public string PatientFirstName { get; set; }
         public string PatientLastName { get; set; }
@@ -14,7 +14,6 @@ namespace MedicalRecordsClassLibrary
         public string PatientAge { get; set; }
         public string PatientGender { get; set; }
         public DateTime DateAdmitted { get; set; }
-        public string PatientID { get; set; }
         public string PatientChiefComplaint { get; set; }
         public string HbA1cResult { get; set; }
         public bool PatientDischarged { get; set; }

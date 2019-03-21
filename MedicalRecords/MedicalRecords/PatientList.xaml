@@ -19,7 +19,31 @@
             <TextBlock x:Name="AgeSerch" HorizontalAlignment="Center" Margin="0,140,750,0" TextWrapping="Wrap" Text="Age" VerticalAlignment="Top" Foreground="Black" FontSize="15" FontWeight="Bold"/>
             <TextBlock x:Name="ComplaintSerch" HorizontalAlignment="Center" Margin="0,140,240,0" TextWrapping="Wrap" Text="Chief Complaint" VerticalAlignment="Top" Foreground="Black" FontSize="15" FontWeight="Bold"/>
 
+            <ListView ItemsSource="{Binding Source=MedicalRecordsClassLibrary.Patients}" HorizontalAlignment="Center" Height="500" Margin="0,170,0,0" VerticalAlignment="Center" Width="820" x:Name="lvPatients" >
 
+                <ListView.View>
+
+                    <GridView AllowsColumnReorder="true" >
+
+
+                        <GridViewColumn DisplayMemberBinding="{Binding Path=PatientFirstName}" Header="First Name" Width="120"/>
+
+                        <GridViewColumn DisplayMemberBinding="{Binding Path=PatientLastName}" Header="Last Name" Width="120"/>
+
+                        <GridViewColumn DisplayMemberBinding="{Binding Path=PatientDOB}" Header="DOB" Width="80"/>
+                        <GridViewColumn DisplayMemberBinding="{Binding Path=PatientAge}" Header="Age" Width="70"/>
+                        <GridViewColumn DisplayMemberBinding="{Binding Path=PatientGender}" Header="Gender" Width="100"/>
+                        <GridViewColumn DisplayMemberBinding="{Binding Path=DateAdmitted}" Header="Admit Date" Width="120"/>
+                        <GridViewColumn DisplayMemberBinding="{Binding Path=PatientChiefComplaint}" Header="Cheif Complaint" Width="183"/>
+
+
+
+
+                    </GridView>
+
+                </ListView.View>
+
+            </ListView>
 
         </Grid>
     </Border>

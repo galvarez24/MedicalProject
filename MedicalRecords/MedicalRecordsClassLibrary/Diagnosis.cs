@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MedicalRecordsClassLibrary
 {
-    class Diagnosis
+    public class Diagnosis
     {
         public string Doctor { get; set; }
         public string DoctorDiagnosis { get; set; }
