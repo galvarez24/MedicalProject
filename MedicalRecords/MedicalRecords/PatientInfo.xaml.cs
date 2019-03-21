@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -35,6 +36,210 @@ namespace MedicalRecords
         public PatientInfo()
         {
             InitializeComponent();
-        }
+
+
+
+            try
+            {
+                FileStream fs = new FileStream("C:\\Users\\alvar\\Documents\\MedicalProject\\Medical\\patientAllergies.txt", FileMode.Open);
+                AllergiesPath.Text = fs.Name;
+
+                StreamReader sr = new StreamReader(fs);
+
+                while (sr.Peek() != -1)
+                {
+                    PatientAllergies.Text += sr.ReadToEnd();
+                }
+
+                fs.Close();
+            }
+            catch (FileNotFoundException fnf)
+            {
+                PatientAllergies.Text += "File Not Found";
+            }
+
+            catch (DirectoryNotFoundException dnf)
+            {
+                PatientAllergies.Text += "Directory Not Found";
+            }
+
+            catch (Exception ex)
+            {
+                PatientAllergies.Text += ex.Message;
+            }
+
+
+
+            try
+            {
+                FileStream fs = new FileStream("C:\\Users\\alvar\\Documents\\MedicalProject\\Medical\\patientSurgeries.txt", FileMode.Open);
+                SurgeriesPath.Text = fs.Name;
+
+                StreamReader sr = new StreamReader(fs);
+
+                while (sr.Peek() != -1)
+                {
+                    PatientSurgeries.Text += sr.ReadToEnd();
+                }
+
+                fs.Close();
+            }
+
+
+            catch (FileNotFoundException fnf)
+            {
+                PatientSurgeries.Text += "File Not Found";
+            }
+
+            catch (DirectoryNotFoundException dnf)
+            {
+                PatientSurgeries.Text += "Directory Not Found";
+            }
+
+            catch (Exception ex)
+            {
+                PatientSurgeries.Text += ex.Message;
+            }
+
+
+
+            try
+            {
+                FileStream fs = new FileStream("C:\\Users\\alvar\\Documents\\MedicalProject\\Medical\\patientMedications.txt", FileMode.Open);
+                MedicationsPath.Text = fs.Name;
+
+                StreamReader sr = new StreamReader(fs);
+
+                while (sr.Peek() != -1)
+                {
+                    PatientMedications.Text += sr.ReadToEnd();
+                }
+
+                fs.Close();
+            }
+
+
+            catch (FileNotFoundException fnf)
+            {
+                PatientMedications.Text += "File Not Found";
+            }
+
+            catch (DirectoryNotFoundException dnf)
+            {
+                PatientMedications.Text += "Directory Not Found";
+            }
+
+            catch (Exception ex)
+            {
+                PatientMedications.Text += ex.Message;
+            }
+
+
+            try
+            {
+                FileStream fs = new FileStream("C:\\Users\\alvar\\Documents\\MedicalProject\\Medical\\patientLabs.txt", FileMode.Open);
+                LabsPath.Text = fs.Name;
+
+                StreamReader sr = new StreamReader(fs);
+
+                while (sr.Peek() != -1)
+                {
+                    PatientLabs.Text += sr.ReadToEnd();
+                }
+
+                fs.Close();
+            }
+
+
+            catch (FileNotFoundException fnf)
+            {
+                PatientLabs.Text += "File Not Found";
+            }
+
+            catch (DirectoryNotFoundException dnf)
+            {
+                PatientLabs.Text += "Directory Not Found";
+            }
+
+            catch (Exception ex)
+            {
+                PatientLabs.Text += ex.Message;
+            }
+
+
+
+            try
+            {
+                FileStream fs = new FileStream("C:\\Users\\alvar\\Documents\\MedicalProject\\Medical\\patientDiagnosis.txt", FileMode.Open);
+                DiagnosisPath.Text = fs.Name;
+
+                StreamReader sr = new StreamReader(fs);
+
+                while (sr.Peek() != -1)
+                {
+                    PatientDiagnosis.Text += sr.ReadToEnd();
+                }
+
+                fs.Close();
+            }
+
+
+            catch (FileNotFoundException fnf)
+            {
+                PatientDiagnosis.Text += "File Not Found";
+            }
+
+            catch (DirectoryNotFoundException dnf)
+            {
+                PatientDiagnosis.Text += "Directory Not Found";
+            }
+
+            catch (Exception ex)
+            {
+                PatientDiagnosis.Text += ex.Message;
+            }
+
+
+
+            try
+            {
+                FileStream fs = new FileStream("C:\\Users\\alvar\\Documents\\MedicalProject\\Medical\\patientRemarks.txt", FileMode.Open);
+                RemarksPath.Text = fs.Name;
+
+                StreamReader sr = new StreamReader(fs);
+
+                while (sr.Peek() != -1)
+                {
+                    PatientRemakrs.Text += sr.ReadToEnd();
+                }
+
+                fs.Close();
+            }
+
+
+            catch (FileNotFoundException fnf)
+            {
+                PatientRemakrs.Text += "File Not Found";
+            }
+
+            catch (DirectoryNotFoundException dnf)
+            {
+                PatientRemakrs.Text += "Directory Not Found";
+            }
+
+            catch (Exception ex)
+            {
+                PatientRemakrs.Text += ex.Message;
+            }
+
+            private void Button_Click_Save(object sender, RoutedEventArgs e)
+
+            {
+                //this way automatically closes the files and releases it once its done with it           
+                using (StreamWriter outfile = new StreamWriter(*Path.Text))
+                {
+                    outfile.Write(fileContents.Text);
+                }
+            }
     }
 }

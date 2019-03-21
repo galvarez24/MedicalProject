@@ -17,13 +17,25 @@
         <TextBlock x:Name="PatientAdmit" HorizontalAlignment="Center" Margin="0,180,85,0" TextWrapping="Wrap" Text="Admit Date" VerticalAlignment="Top" Foreground="Black" FontSize="13" FontWeight="Bold"/>
         <TextBlock x:Name="PatientComplaint" HorizontalAlignment="Center" Margin="0,220,110,0" TextWrapping="Wrap" Text="Chief Complaint" VerticalAlignment="Top" Foreground="Black" FontSize="13" FontWeight="Bold"/>
 
-        <ListBox   x:Name="PatientAllergies" Margin="20,330,650,230" />
-        <ListBox   x:Name="PatientSurgeries" Margin="20,540,650,20"/>
-        <ListBox   x:Name="PatientMedications" Margin="330,330,340,230" />
-        <ListBox   x:Name="PatientLabs" Margin="330,540,340,20" />
-        <ListBox   x:Name="PatientDiagnosis" Margin="650,330,20,230" />
-        <ListBox   x:Name="PatientRemakrs" Margin="650,540,20,20" />
+        <TextBlock x:Name="AllergiesPath" TextWrapping="Wrap" Text="" Margin="20,311,818,394" Visibility="Hidden" />
+        <TextBox   x:Name="PatientAllergies"   Margin="20,330,650,230" TextWrapping="Wrap" Text="" AcceptsReturn="True"/>
 
+        <TextBlock x:Name="SurgeriesPath" TextWrapping="Wrap" Text="" Margin="20,521,818,184" Visibility="Hidden" />
+        <TextBox   x:Name="PatientSurgeries"    Margin="20,540,650,20" TextWrapping="Wrap" Text="" AcceptsReturn="True"/>
+
+        <TextBlock x:Name="MedicationsPath" TextWrapping="Wrap" Text="" Margin="330,316,508,389" Visibility="Hidden" />
+        <TextBox   x:Name="PatientMedications"   Margin="330,330,340,230" TextWrapping="Wrap" Text="" AcceptsReturn="True"/>
+
+        <TextBlock x:Name="LabsPath" TextWrapping="Wrap" Text="" Margin="330,521,508,184" Visibility="Hidden" />
+        <TextBox   x:Name="PatientLabs"    Margin="330,540,340,20" TextWrapping="Wrap" Text="" AcceptsReturn="True"/>
+
+        <TextBlock x:Name="DiagnosisPath" TextWrapping="Wrap" Text="" Margin="650,311,188,394" Visibility="Hidden" />
+        <TextBox   x:Name="PatientDiagnosis"   Margin="650,330,20,230" TextWrapping="Wrap" Text="" AcceptsReturn="True"/>
+
+        <TextBlock x:Name="RemarksPath" TextWrapping="Wrap" Text="" Margin="648,523,190,182" Visibility="Hidden" />
+        <TextBox   x:Name="PatientRemakrs"   Margin="650,540,20,20" TextWrapping="Wrap" Text="" AcceptsReturn="True"/>
+
+        <Button Content="Save" FontSize="25" FontStyle="Italic" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top" Height="127" Width="214" Margin="658,142,20,0" Background="SkyBlue" Click="Button_Click_Save"/>
 
 
 

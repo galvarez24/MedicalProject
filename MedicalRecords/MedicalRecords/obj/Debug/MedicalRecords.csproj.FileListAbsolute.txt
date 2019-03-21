@@ -18,3 +18,4 @@ C:\Users\alvar\Documents\MedicalProject\MedicalRecords\MedicalRecords\obj\Debug\
 C:\Users\alvar\Documents\MedicalProject\MedicalRecords\MedicalRecords\obj\Debug\PatientList.g.cs
 C:\Users\alvar\Documents\MedicalProject\MedicalRecords\MedicalRecords\obj\Debug\PatientList.baml
 C:\Users\alvar\Documents\MedicalProject\MedicalRecords\MedicalRecords\obj\Debug\MainWindow.g.cs
+C:\Users\alvar\Documents\MedicalProject\MedicalRecords\MedicalRecords\obj\Debug\PatientInfo.g.cs
