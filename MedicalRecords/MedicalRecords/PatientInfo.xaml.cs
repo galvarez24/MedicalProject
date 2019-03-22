@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MedicalRecordsClassLibrary;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.IO;
@@ -36,7 +37,6 @@ namespace MedicalRecords
         public PatientInfo()
         {
             InitializeComponent();
-
 
 
             try
@@ -261,17 +261,27 @@ namespace MedicalRecords
                     outfile.Write(PatientLabs.Text);
                 }
 
-                //this way automatically closes the files and releases it once its done with it           
-                using (StreamWriter outfile = new StreamWriter(DiagnosisPath.Text))
+
+
+                if (UserPrivilege.Doctor == true)
                 {
-                    outfile.Write(PatientDiagnosis.Text);
+                    //this way automatically closes the files and releases it once its done with it           
+                    using (StreamWriter outfile = new StreamWriter(DiagnosisPath.Text))
+                    {
+                        outfile.Write(PatientDiagnosis.Text);
+                    }
                 }
+
+                
+                
 
                 //this way automatically closes the files and releases it once its done with it           
                 using (StreamWriter outfile = new StreamWriter(RemarksPath.Text))
                 {
                     outfile.Write(PatientRemakrs.Text);
                 }
+
+                
             }
 
     }

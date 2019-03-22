@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("database/patientlist.txt")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("database/userslist.txt")]
 
 

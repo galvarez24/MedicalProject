@@ -123,7 +123,9 @@
   <ItemGroup>
     <Resource Include="Design\patientinfobackground.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="DataBase\usersList.txt" />
+  </ItemGroup>
   <ItemGroup>
     <Resource Include="DataBase\patientAllergies.txt" />
     <Resource Include="DataBase\patientDiagnosis.txt" />
