@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:MedicalRecords"
         mc:Ignorable="d"
         Title="PatientList" Height="750" Width="900">
-    <Border BorderBrush="AliceBlue" BorderThickness="5">         
+    <Border BorderBrush="AliceBlue" BorderThickness="5">
         <Grid>
             <Image Source="Design/patientlistbackground.jpg" Stretch="UniformToFill"/>
             <TextBlock Text="Patient Portal" HorizontalAlignment="Center" Margin="0,30,450,0" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold" FontSize="30" Foreground="Black"/>
@@ -19,7 +19,9 @@
             <TextBlock x:Name="AgeSerch" HorizontalAlignment="Center" Margin="0,140,750,0" TextWrapping="Wrap" Text="Age" VerticalAlignment="Top" Foreground="Black" FontSize="15" FontWeight="Bold"/>
             <TextBlock x:Name="ComplaintSerch" HorizontalAlignment="Center" Margin="0,140,240,0" TextWrapping="Wrap" Text="Chief Complaint" VerticalAlignment="Top" Foreground="Black" FontSize="15" FontWeight="Bold"/>
 
-            <ListView ItemsSource="{Binding Source=MedicalRecordsClassLibrary.Patients}" HorizontalAlignment="Center" Height="500" Margin="0,170,0,0" VerticalAlignment="Center" Width="820" x:Name="lvPatients" >
+
+
+            <ListView HorizontalAlignment="Center" Height="500" Margin="0,170,0,0" VerticalAlignment="Center" Width="820" x:Name="lvPatients" MouseDoubleClick="SinglePatientInfo_Click" >
 
                 <ListView.View>
 
@@ -44,6 +46,7 @@
                 </ListView.View>
 
             </ListView>
+            <Button Content="Search" HorizontalAlignment="Left" VerticalAlignment="Top" Width="105" Margin="565,117,0,0" Height="35" Click="Search_Click" Background="AliceBlue" FontSize="14"/>
 
         </Grid>
     </Border>

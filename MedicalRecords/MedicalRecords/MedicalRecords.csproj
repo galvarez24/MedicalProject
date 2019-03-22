@@ -65,11 +65,11 @@
     </Page>
     <Page Include="PatientInfo.xaml">
       <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
     </Page>
     <Page Include="PatientList.xaml">
       <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
@@ -123,8 +123,17 @@
   <ItemGroup>
     <Resource Include="Design\patientinfobackground.png" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="DataBase\" />
+    <Resource Include="DataBase\patientAllergies.txt" />
+    <Resource Include="DataBase\patientDiagnosis.txt" />
+    <Resource Include="DataBase\patientLabs.txt" />
+    <Resource Include="DataBase\patientMedications.txt" />
+    <Resource Include="DataBase\patientRemarks.txt" />
+    <Resource Include="DataBase\patientSurgeries.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="DataBase\patientList.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

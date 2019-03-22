@@ -3,8 +3,9 @@
     "",
     "\\MedicalRecords",
     "\\MedicalRecords\\MedicalRecords",
+    "\\MedicalRecords\\MedicalRecordsClassLibrary",
     "\\MedicalRecords\\MedicalRecords\\Design"
   ],
-  "SelectedNode": "\\MedicalRecords\\MedicalRecords\\Design\\patientlistbackground.jpg",
+  "SelectedNode": "\\MedicalRecords",
   "PreviewInSolutionExplorer": false
 }

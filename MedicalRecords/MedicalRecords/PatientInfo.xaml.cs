@@ -41,7 +41,7 @@ namespace MedicalRecords
 
             try
             {
-                FileStream fs = new FileStream("C:\\Users\\alvar\\Documents\\MedicalProject\\Medical\\patientAllergies.txt", FileMode.Open);
+                FileStream fs = new FileStream("C:\\Users\\alvar\\Documents\\MedicalProject\\MedicalRecords\\MedicalRecords\\DataBase\\patientAllergies.txt", FileMode.Open);
                 AllergiesPath.Text = fs.Name;
 
                 StreamReader sr = new StreamReader(fs);
@@ -72,7 +72,7 @@ namespace MedicalRecords
 
             try
             {
-                FileStream fs = new FileStream("C:\\Users\\alvar\\Documents\\MedicalProject\\Medical\\patientSurgeries.txt", FileMode.Open);
+                FileStream fs = new FileStream("C:\\Users\\alvar\\Documents\\MedicalProject\\MedicalRecords\\MedicalRecords\\DataBase\\patientSurgeries.txt", FileMode.Open);
                 SurgeriesPath.Text = fs.Name;
 
                 StreamReader sr = new StreamReader(fs);
@@ -105,7 +105,7 @@ namespace MedicalRecords
 
             try
             {
-                FileStream fs = new FileStream("C:\\Users\\alvar\\Documents\\MedicalProject\\Medical\\patientMedications.txt", FileMode.Open);
+                FileStream fs = new FileStream("C:\\Users\\alvar\\Documents\\MedicalProject\\MedicalRecords\\MedicalRecords\\DataBase\\patientMedications.txt", FileMode.Open);
                 MedicationsPath.Text = fs.Name;
 
                 StreamReader sr = new StreamReader(fs);
@@ -137,7 +137,7 @@ namespace MedicalRecords
 
             try
             {
-                FileStream fs = new FileStream("C:\\Users\\alvar\\Documents\\MedicalProject\\Medical\\patientLabs.txt", FileMode.Open);
+                FileStream fs = new FileStream("C:\\Users\\alvar\\Documents\\MedicalProject\\MedicalRecords\\MedicalRecords\\DataBase\\patientLabs.txt", FileMode.Open);
                 LabsPath.Text = fs.Name;
 
                 StreamReader sr = new StreamReader(fs);
@@ -170,7 +170,7 @@ namespace MedicalRecords
 
             try
             {
-                FileStream fs = new FileStream("C:\\Users\\alvar\\Documents\\MedicalProject\\Medical\\patientDiagnosis.txt", FileMode.Open);
+                FileStream fs = new FileStream("C:\\Users\\alvar\\Documents\\MedicalProject\\MedicalRecords\\MedicalRecords\\DataBase\\patientDiagnosis.txt", FileMode.Open);
                 DiagnosisPath.Text = fs.Name;
 
                 StreamReader sr = new StreamReader(fs);
@@ -203,7 +203,7 @@ namespace MedicalRecords
 
             try
             {
-                FileStream fs = new FileStream("C:\\Users\\alvar\\Documents\\MedicalProject\\Medical\\patientRemarks.txt", FileMode.Open);
+                FileStream fs = new FileStream("C:\\Users\\alvar\\Documents\\MedicalProject\\MedicalRecords\\MedicalRecords\\DataBase\\patientRemarks.txt", FileMode.Open);
                 RemarksPath.Text = fs.Name;
 
                 StreamReader sr = new StreamReader(fs);
@@ -231,6 +231,8 @@ namespace MedicalRecords
             {
                 PatientRemakrs.Text += ex.Message;
             }
+
+        }
 
             private void Button_Click_Save(object sender, RoutedEventArgs e)
 
@@ -271,5 +273,7 @@ namespace MedicalRecords
                     outfile.Write(PatientRemakrs.Text);
                 }
             }
+
     }
 }
+
