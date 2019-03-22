@@ -8,14 +8,14 @@
         Title="PatientInfo" Height="750" Width="900">
     <Grid Background="AliceBlue">
         <Image Source="Design/patientinfobackground.png" Stretch="UniformToFill"/>
-        <TextBlock Text="Patient Information" HorizontalAlignment="Center" Margin="0,30,450,0" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold" FontSize="30" Foreground="Black"/>
-        <Image Margin="50,130,700,450" x:Name="PatientPic"/>
-        <TextBlock x:Name="PatientName" HorizontalAlignment="Center" Margin="0,140,400,0" TextWrapping="Wrap" Text="Name" VerticalAlignment="Top" Foreground="Black" FontSize="13" FontWeight="Bold"/>
-        <TextBlock x:Name="PatientDOB" HorizontalAlignment="Center" Margin="0,180,400,0" TextWrapping="Wrap" Text="DOB" VerticalAlignment="Top" Foreground="Black" FontSize="13" FontWeight="Bold"/>
-        <TextBlock x:Name="PatientAge" HorizontalAlignment="Center" Margin="0,220,400,0" TextWrapping="Wrap" Text="Age" VerticalAlignment="Top" Foreground="Black" FontSize="13" FontWeight="Bold"/>
-        <TextBlock x:Name="PatientGender" HorizontalAlignment="Center" Margin="0,140,60,0" TextWrapping="Wrap" Text="Gender" VerticalAlignment="Top" Foreground="Black" FontSize="13" FontWeight="Bold"/>
-        <TextBlock x:Name="PatientAdmit" HorizontalAlignment="Center" Margin="0,180,85,0" TextWrapping="Wrap" Text="Admit Date" VerticalAlignment="Top" Foreground="Black" FontSize="13" FontWeight="Bold"/>
-        <TextBlock x:Name="PatientComplaint" HorizontalAlignment="Center" Margin="0,220,110,0" TextWrapping="Wrap" Text="Chief Complaint" VerticalAlignment="Top" Foreground="Black" FontSize="13" FontWeight="Bold"/>
+        <TextBlock Text="Patient Information" HorizontalAlignment="Center" Margin="289,77,324,0" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold" FontSize="30" Foreground="Black"/>
+        <Image Margin="52,24,698,556" x:Name="PatientPic"/>
+        <TextBlock x:Name="PatientName" HorizontalAlignment="Center" Margin="52,202,803,0" TextWrapping="Wrap" Text="Name" VerticalAlignment="Top" Foreground="Black" FontSize="13" FontWeight="Bold"/>
+        <TextBlock x:Name="PatientDOB" HorizontalAlignment="Center" Margin="188,202,676,0" TextWrapping="Wrap" Text="DOB" VerticalAlignment="Top" Foreground="Black" FontSize="13" FontWeight="Bold"/>
+        <TextBlock x:Name="PatientAge" HorizontalAlignment="Center" Margin="52,252,815,0" TextWrapping="Wrap" Text="Age" VerticalAlignment="Top" Foreground="Black" FontSize="13" FontWeight="Bold"/>
+        <TextBlock x:Name="PatientGender" HorizontalAlignment="Center" Margin="171,255,676,0" TextWrapping="Wrap" Text="Gender" VerticalAlignment="Top" Foreground="Black" FontSize="13" FontWeight="Bold"/>
+        <TextBlock x:Name="PatientAdmit" HorizontalAlignment="Center" Margin="359,205,462,0" TextWrapping="Wrap" Text="Admit Date" VerticalAlignment="Top" Foreground="Black" FontSize="13" FontWeight="Bold"/>
+        <TextBlock x:Name="PatientComplaint" HorizontalAlignment="Center" Margin="330,255,462,0" TextWrapping="Wrap" Text="Chief Complaint" VerticalAlignment="Top" Foreground="Black" FontSize="13" FontWeight="Bold"/>
 
         <TextBlock x:Name="AllergiesPath" TextWrapping="Wrap" Text="" Margin="20,311,818,394" Visibility="Hidden" />
         <TextBox   x:Name="PatientAllergies"   Margin="20,330,650,230" TextWrapping="Wrap" Text="" AcceptsReturn="True"/>
